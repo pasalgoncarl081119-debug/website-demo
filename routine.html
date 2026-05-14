@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="badge">Steps</div>
+            <div class="progress-wrapper">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle id="progress-ring" class="prog" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="progress-text">
+                    <h1 id="current-steps">285</h1>
+                    <p>Today's Goal 9800 Steps</p>
+                </div>
+            </div>
+            <button class="btn-start" onclick="startExercise()">Start Exercise</button>
+            
+            <div class="sidebar-stats">
+                <div class="mini-stat"><span>🛌</span><p>9.1</p> <small>Sleep</small></div>
+                <div class="mini-stat"><span>⚖️</span><p>80</p> <small>Weight</small></div>
+                <div class="mini-stat"><span>💧</span><p>9.3</p> <small>Sugar</small></div>
+                <div class="mini-stat"><span>❤️</span><p>128³³</p> <small>Pressure</small></div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h2>Fitness App Dashboard with Daily Workout Statistics</h2>
+                <div class="section-badge">Your Text Here</div>
+            </header>
+
+            <div class="top-summary">
+                <div class="stat-box"><strong>1175</strong><br><small>Sleep</small></div>
+                <div class="stat-box"><strong>14</strong><br><small>Weight</small></div>
+                <div class="stat-box"><strong>40.5</strong><br><small>Sugar</small></div>
+                <div class="stat-box"><strong>0.83</strong><br><small>Pressure</small></div>
+            </div>
+
+            <div class="icon-summary">
+                <div class="icon-box">🛌 9.1<br><small>Sleep</small></div>
+                <div class="icon-box">⚖️ 80<br><small>Track</small></div>
+                <div class="icon-box">💧 9.3<br><small>Sugar</small></div>
+                <div class="icon-box">❤️ 128³³<br><small>Heart</small></div>
+            </div>
+
+            <section class="fitness-chart">
+                <div class="badge-center">Fitness</div>
+                <div class="chart-header">
+                    <div class="card">🏃 <strong>1800</strong> <small>Total Steps</small></div>
+                    <div class="card">📍 <strong>1.70/km</strong> <small>Distance</small></div>
+                </div>
+                <div class="bar-chart" id="chart-bars">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
